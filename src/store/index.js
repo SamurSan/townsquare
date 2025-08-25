@@ -52,7 +52,10 @@ const clean = id => id.toLocaleLowerCase().replace(/[^a-z0-9]/g, "");
 const editionJSONbyId = new Map(
   editionJSON.map(edition => [edition.id, edition])
 );
-const rolesJSONbyId = new Map(rolesJSON.map(role => [role.id, role]));
+//const rolesJSONbyId = new Map(rolesJSON.map(role => [role.id, role]));
+const rolesJSONbyId = new Map(
+  rolesJSON.roles.map(role => [role.id, role])
+);
 const fabled = new Map(fabledJSON.map(role => [role.id, role]));
 
 // jinxes
