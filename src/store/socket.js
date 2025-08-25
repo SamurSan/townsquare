@@ -29,6 +29,7 @@ class LiveSession {
       this._wss +
         channel +
         "/" +
+		//tu dodalem linie
 		'Access-Control-Allow-Origin': "*" +
         (this._isSpectator ? this._store.state.session.playerId : "host")
     );
