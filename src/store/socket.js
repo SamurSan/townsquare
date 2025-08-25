@@ -29,6 +29,7 @@ class LiveSession {
       this._wss +
         channel +
         "/" +
+		'Access-Control-Allow-Origin': "*" +
         (this._isSpectator ? this._store.state.session.playerId : "host")
     );
     this._socket.addEventListener("message", this._handleMessage.bind(this));
