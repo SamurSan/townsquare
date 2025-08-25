@@ -1,7 +1,7 @@
 class LiveSession {
   constructor(store) {
-    //this._wss = "https://townsquare-2pt2.vercel.app/";
-    this._wss = "ws://localhost:8081/"; // uncomment if using local server with NODE_ENV=development
+    this._wss = "https://townsquare-2pt2.vercel.app/";
+    //this._wss = "ws://localhost:8081/"; // uncomment if using local server with NODE_ENV=development
     this._socket = null;
     this._isSpectator = true;
     this._gamestate = [];
