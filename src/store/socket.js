@@ -1,6 +1,6 @@
 class LiveSession {
   constructor(store) {
-    this._wss = "https://townsquare-2pt2.vercel.app/";
+    this._wss = "https://clocktower-3a84b.web.app/";
     //this._wss = "ws://localhost:8081/"; // uncomment if using local server with NODE_ENV=development
     this._socket = null;
     this._isSpectator = true;
@@ -29,8 +29,6 @@ class LiveSession {
       this._wss +
         channel +
         "/" +
-		//tu dodalem lini
-		"Access-Control-Allow-Origin": "*" +
         (this._isSpectator ? this._store.state.session.playerId : "host")
     );
     this._socket.addEventListener("message", this._handleMessage.bind(this));
