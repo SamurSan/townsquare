@@ -1,6 +1,6 @@
 class LiveSession {
   constructor(store) {
-    this._wss = "https://ephemeral-jalebi-0663d7.netlify.app/";
+    this._wss = "clocktowerbysamur.netlify.app";
     //this._wss = "ws://localhost:8081/"; // uncomment if using local server with NODE_ENV=development
     this._socket = null;
     this._isSpectator = true;
