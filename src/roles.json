@@ -1,5 +1,4 @@
-{
-	"roles": [
+[
 		{
 			"id": "dusk",
 			"edition": "special",
@@ -3201,5 +3200,4 @@
 			"firstNight": 2,
 			"otherNight": 2
 		}
-	]
-}
+]
