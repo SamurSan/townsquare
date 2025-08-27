@@ -25,7 +25,7 @@ const wss = new WebSocket.Server({
   verifyClient: info =>
     info.origin &&
     !!info.origin.match(
-      /^https?:\/\/([^.]+\.github\.io|localhost|clocktower\.online|eddbra1nprivatetownsquare\.xyz)/i
+      /^https?:\/\/([^.]+\.github\.io|localhost|clocktower\.online|townsquare-2pt2\.vercel\.app|eddbra1nprivatetownsquare\.xyz)/i
     )
 });
 
